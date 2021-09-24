@@ -1,0 +1,52 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --primary: #ff7000;
+  --secondary: #504e4d;
+
+  --fuenteprincipal: "Teko", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/** Globales **/
+body{
+    background-color: var(--secondary);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 40%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3{
+    text-align: center;
+    color: var(--white);
+    font-family: var(--fuenteprincipal);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
