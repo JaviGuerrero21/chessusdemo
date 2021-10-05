@@ -28,9 +28,11 @@ p{
 }
 a{
     text-decoration: none;
+    color: var(--white);
 }
 img{
-    max-width: 40%;
+    max-width: 100%;
+    max-height: 10rem;
 }
 .contenedor{
     max-width: 120rem;
@@ -41,12 +43,16 @@ h1, h2, h3{
     color: var(--white);
     font-family: var(--fuenteprincipal);
 }
-h1{
-    font-size: 4rem;
+h1{ font-size: 4rem }
+h2{ font-size: 3.2rem }
+h3{ font-size: 2.4rem }
+
+/*Header*/
+.header{
+    display: flex;
+    justify-content: center;
 }
-h2{
-    font-size: 3.2rem;
-}
-h3{
-    font-size: 2.4rem;
+
+.header__logo{
+    margin: 3rem 0;
 }
