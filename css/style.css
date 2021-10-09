@@ -101,13 +101,24 @@ h3{ font-size: 2.4rem; }
 
 }
 .producto__nombre{
-    font-family: var(--fuenteprincipal);
     font-weight: bold;
     font-size: 3rem;
 }
+.producto__nombre:hover{
+    transition: 0.09s;
+    font-size: 3.4rem;
+    color: var(--primary);
+}
+.producto__nombre{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.producto__nombre,
 .producto__precio{
     font-family: var(--fuenteprincipal);
-    font-size: 2.4rem;
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
 }
 
 
