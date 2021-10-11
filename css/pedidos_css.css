@@ -75,29 +75,32 @@
   }
   
   /*Grid*/
-  .grid{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 2rem;
-      margin: 0 0.5rem;
-  }
-  
-  @media (min-width: 768px){
-      .grid{
-          grid-template-columns: repeat(2, 1fr);
-      }
-  }
+  .nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    margin: 0 1rem;
+}
+.nosotros__bloque, .nosotros__imagen{
+    background-color: var(--black);
+}
 
-  .bloque--img{
-      height: 20rem;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url(../img/banner_burger.jpg);
-  }
-  @media (min-width: 768) {
-    .bloque--img{
-        height: 80rem;
-        grid-row: 2 / 3;
-        grid-column: 1 / 2;
+.nosotros__bloque p{
+    padding: 1rem;
+}
+.nosotros__imagen{
+    grid-row: 1 / 2;
+}
+
+@media (min-width: 768px) { 
+    .nosotros{
+        grid-template-columns: repeat(2, 1fr);
     }
-  }
+    .nosotros .nosotros__imagen{
+        width: 100%;
+        grid-column: 2 / 3;
+    }
+    
+}
+
+ 
