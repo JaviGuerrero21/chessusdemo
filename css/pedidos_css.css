@@ -1,0 +1,103 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --primary: #ff7000;
+    --secondary: #504e4d;
+  
+    --fuenteprincipal: "Teko", sans-serif;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /** Globales **/
+  body{
+      background-color: var(--secondary);
+      font-size: 1.6rem;
+      line-height: 1.5;
+  }
+  p{
+      font-size: 1.8rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--white);
+  }
+  a{
+      text-decoration: none;
+      color: var(--white);
+  }
+  img{
+      max-width: 100%;
+      max-height: 10rem;
+  }
+  .contenedor{
+      max-width: 120rem;
+      margin: 0 auto;
+  }
+  h1, h2, h3{
+      text-align: center;
+      color: var(--white);
+      font-family: var(--fuenteprincipal);
+  }
+  h1{ font-size: 4rem; }
+  h2{ font-size: 3.2rem; }
+  h3{ font-size: 2.4rem; }
+  
+  /*Header*/
+  .header{
+      display: flex;
+      justify-content: center;
+  }
+  
+  .header__logo{
+      margin: 2rem 0;
+  }
+  
+  /*Navegacion*/
+  .navegacion{
+      background-color: var(--black);
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+  }
+  .navegacion__enlace{
+      font-family: var(--fuenteprincipal);
+      font-size: 3rem;
+  }
+  .navegacion__enlace--activo,
+  .navegacion__enlace:hover{
+      color: var(--primary);
+  }
+  
+  /*Grid*/
+  .grid{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+      margin: 0 0.5rem;
+  }
+  
+  @media (min-width: 768px){
+      .grid{
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  .bloque--img{
+      height: 20rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../img/banner_burger.jpg);
+  }
+  @media (min-width: 768) {
+    .bloque--img{
+        height: 80rem;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+  }
