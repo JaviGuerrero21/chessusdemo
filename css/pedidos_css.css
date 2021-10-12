@@ -89,6 +89,7 @@
     padding: 1rem;
 }
 .nosotros__imagen{
+    max-height: fit-content;
     grid-row: 1 / 2;
 }
 
