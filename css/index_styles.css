@@ -1,6 +1,6 @@
 :root {
     --white: #ffffff;
-    --black: #000000;
+    --black: #272524;
     --primary: #ff7000;
     --secondary: #504e4d;
   
@@ -119,9 +119,14 @@
     gap: 2rem;
     margin: 0 1rem;
 }
-.bloques p{
+.bloque p{
     text-align: justify;
     padding: 0 1rem;
+}
+@media(max-width: 375px){
+    .bloque p{
+        font-size: 1.5rem;
+    }
 }
 .bloque{
     background-color: var(--black);
