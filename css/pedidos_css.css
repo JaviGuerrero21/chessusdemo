@@ -100,8 +100,27 @@
     .nosotros .nosotros__imagen{
         width: 100%;
         grid-column: 2 / 3;
-    }
-    
+    } 
 }
+
+/*Porque Comprar con nosotros*/
+.contenedor{
+
+}
+.comprar{
+
+}
+.comprar__titulo{
+
+}
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.bloque{
+    background-color: var(--black);
+}
+
 
  
