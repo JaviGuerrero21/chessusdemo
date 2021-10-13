@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pedidos.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chessus Demo</title>
@@ -27,8 +27,38 @@
 
     <nav class="navegacion">
       <a class="navegacion__enlace" href="menu.html">Menu</a>
-      <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Pedidos</a>
+      <a class="navegacion__enlace navegacion__enlace--activo" href="index.html"
+        >Pedidos</a
+      >
     </nav>
+
+    <main class="contenedor">
+      <h1>Hambugesa 1</h1>
+      <div class="hamburger">
+        <img
+          class="hamburguer__img"
+          src="img/burger-test1.jpeg"
+          alt="burger"
+        />
+        <div class="hamburguer__contenido">
+          <p>
+            Nos especializamos en hamburguesas, quesadillas, nachos, sándwiches,
+            surtidas y mucho queso, utilizamos ingredientes de primera calidad y
+            orgánicos.
+          </p>
+          <form class="formulario">
+            <select class="formulario__campo">
+              <option disabled selected>-- Tipo Combo --</option>
+              <option>Combo Regular</option>
+              <option>Combo Agrandado</option>
+              <option>Combo Extra Chessus</option>
+            </select>
+            <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" />
+            <input class="formulario__submit" type="submit" value="Agregar al Carrito" />
+          </form>
+        </div>
+      </div>
+    </main>
 
     <footer class="footer">
       <p class="footer__legend">
